@@ -1,9 +1,21 @@
+# ============================================================================
+# a smart scanner script with the help of some Android app called 'IP Webcam'
+# ============================================================================
+
 import urllib.request as request
 import numpy as np
 import cv2
 from PIL import Image
 import time
-url = 'http://192.168.1.90:8080/shot.jpg'
+
+# ----------------------------
+# where to get the photo from
+# ----------------------------
+# VNS31
+url = 'http://192.168.178.58:8080/shot.jpg'
+# RNUH10Pro
+# url = 'http://192.168.178.51:8080/shot.jpg'
+
 while True:
     img = request.urlopen(url)
     img_bytes = bytearray(img.read())

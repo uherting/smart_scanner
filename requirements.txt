@@ -1,0 +1,6 @@
+# for stuff by the original coder
+opencv-contrib-python
+Pillow
+numpy
+
+# for stuff by UH
